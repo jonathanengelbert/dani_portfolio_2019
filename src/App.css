@@ -1,33 +1,48 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+html,
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 100% "Julius Sans One", sans-serif;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr 1fr;
+  position: absolute;
+  width: 100%;
+}
+nav ul li {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+nav ul li:first-of-type {
+  text-align: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+nav ul a {
+  text-decoration: none;
+  font-size: 2rem;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+nav ul #home-link {
+  color: white;
+  text-align: left;
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home-screen img {
+  width: 100%;
+  height: 100vh;
 }
+
+/*# sourceMappingURL=App.css.map */
